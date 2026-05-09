@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+}
+.container{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+
+    align-items: center;
+    align-self: center;
+    align-content: center;
+
+    background-color: bisque;
+}
+
+.container .header{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.container .nav-bar{
+    background-color: rgb(52, 52, 201);
+}
+
+.container .container-clock{
+    background-color: green;
+}
+
+.container .bloqA{
+    background-color: blueviolet;
+}
+
+.container .to-do-list{
+    background-color: aquamarine;
+}
+
+.to-do-list .BloqCheckBox{
+    background-color: aliceblue;
+}
+
+.container .registoHumor{
+    background-color: rgb(228, 119, 69);
+}

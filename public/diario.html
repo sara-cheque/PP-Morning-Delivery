@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Diario</title>
+    <link rel="stylesheet" href="public\stylesheet.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER + O RELOGIO -->
+    <div class="container">
+        <div class="header">
+            <!-- imagem logo -->
+            <div class="nav-bar">
+                <p>logo</p>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Diario</a></li>
+                    <li><a href="#">Hoje</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-clock">clock</div>
+    </div>
+    <!-- HEADER + O RELOGIO -->
+
+    <div class="container">
+
+        <div class="bloqA">
+
+            <div class="to-do-list">
+                <p>To Do List</p>
+                <div class="BloqCheckBox ">
+                    <input type="checkbox" id="checkBoxToDo"> 
+                    <p id="nameCheckBoxToDo"></p>
+                    <!-- BloqCheckBox.innerHTML = `${}` fazer com um contador pra ter diferentes slas -->
+                </div>
+                <input type="text" id="inpNameCheckBoxToDo">
+                <button>Adicionar</button>
+            </div>
+
+            <div class="registoHumor">
+                <p>Hoje o dia foi...</p>
+                <button onclick="cadastrarHumorDia(0)">Feliz</button>
+                <button onclick="cadastrarHumorDia(1)">Estresssante</button>
+                <button onclick="cadastrarHumorDia(2)">Cansativo</button>
+                <button onclick="cadastrarHumorDia(3)">Tenso</button>
+                <button onclick="cadastrarHumorDia(4)">Tediante</button>
+                <button onclick="cadastrarHumorDia(5)">Triste</button>
+            </div>
+
+
+        </div>
+
+        <div class="bloqA">
+
+            <p>O que voçê vai fazer...</p>
+
+            <div class="agendaManha">
+                <div class="BloqCheckBox">
+                    <input type="checkbox" id="checkBoxAgenda">
+                    <p id="nameCheckBoxAgenda"></p>
+                    <!-- BloqCheckBox.innerHTML = `${}` fazer com um contador pra ter diferentes slas -->
+                </div>
+                <input type="text" class="inpNameCheckBoxAgenda">
+                <button>Adicionar</button>
+            </div>
+            <div class="agendatarde">
+                <div class="BloqCheckBox">
+                    <input type="checkbox" id="checkBoxAgenda">
+                    <p id="nameCheckBoxAgenda"></p>
+                    <!-- BloqCheckBox.innerHTML = `${}` fazer com um contador pra ter diferentes slas -->
+                </div>
+                <input type="text" class="inpNameCheckBoxAgenda">
+                <button>Adicionar</button>
+            </div>
+            <div class="agendaNoite">
+                <div class="BloqCheckBox">
+                    <input type="checkbox" id="checkBoxAgenda">
+                    <p id="nameCheckBoxAgenda"></p>
+                    <!-- BloqCheckBox.innerHTML = `${}` fazer com um contador pra ter diferentes slas -->
+                </div>
+                <input type="text" class="inpNameCheckBoxAgenda">
+                <button>Adicionar</button>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <p class="titleDiario">DIARIO</p>
+        <p class="subTitle">Cada dia registrado importa</p>
+        <input type="text" id="inpTextBox" class="textBox">
+
+    </div>
+
+</body>
+
+</html>
