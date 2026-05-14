@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+}
+.container{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: space-around;
+
+    background-color: bisque;
+}
+
+ .header{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.container-header {
+    padding: 9px;
+    background-color: aquamarine;
+}
+
+ .nav-bar{
+    background-color: rgb(133, 133, 234);
+    display: flex;
+    flex-direction: row;
+     justify-content: flex-end;
+
+}
+
+.nav-bar ul {
+ display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin-right: 30px;
+  font-size: medium;
+}
+
+ .container-clock{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+ .bloqA{
+    background-color: rgb(118, 21, 209);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+ .to-do-list{
+    background-color: aquamarine;
+    
+}
+
+.to-do-list .BloqCheckBox{
+    background-color: aliceblue;
+}
+
+ .registoHumor{
+    background-color: rgb(228, 119, 69);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.registoHumor button{
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+}
+
+.diario{
+    text-align: center ;
+    padding: 30px;
+
+}
+
+#inpTextBox{
+    border-radius: 20px;
+    border-color: blue;
+    width: 50vw;
+    height: 30vh;
+}
+
+
