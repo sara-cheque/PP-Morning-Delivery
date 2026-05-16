@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Diario</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="styles/stylesheet.css">
+
 
 </head>
 
 <body>
 
+   
+
     <!-- HEADER + O RELOGIO -->
     <div class="container-header">
-        
+
         <div class="header">
             <!-- imagem logo -->
             <div class="nav-bar">
@@ -34,14 +37,20 @@
         <div class="bloqA">
 
             <div class="to-do-list">
+
                 <p>To Do List</p>
+
                 <div class="BloqCheckBox ">
-                    <input type="checkbox" id="checkBoxToDo"> 
-                    <p id="nameCheckBoxToDo"></p>
-                    <!-- BloqCheckBox.innerHTML = `${}` fazer com um contador pra ter diferentes slas -->
+                    <ul id="to-do-list">
+                    </ul>
                 </div>
-                <input type="text" id="inpNameCheckBoxToDo">
-                <button>Adicionar</button>
+
+                <input type="text" id="inpNameToDo" placeholder="Nova tarefa">
+                <button onclick="novaTarefaFixa()" id="btnToDo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                    </svg>
+                </button>
             </div>
 
             <div class="registoHumor">
@@ -107,5 +116,7 @@
     </div>
 
 </body>
+
+<script src="scripts/diario.js"></script>
 
 </html>
