@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <span class="logotipo">Logo</span>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="diario.html">Diario</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="blockA">
+
+        </div>
+        <div class="blockB">
+            <div>
+                <p>Nome</p>
+                <Input id="inpCadNome"></Input>
+            </div>
+            <div>
+                <p>E-Mail</p>
+                <input type="text" id="inpCadEmail" oninput="cadConfirmaEmail()">
+                <div>mensagem de erro</div>
+            </div>
+            <div>
+                <p>Senha</p>
+                <input type="text" id="inpCadSenha" oninput="cadConfirmaSenha(inpCadSenha.value)">
+                <div id="erroSenha"></div>
+            </div>
+            <div>
+                <p>Confirme sua senha</p>
+                <input type="text" id="inpCadConfSenha" onchange="cadConfirmaSenhaIgual()">
+                <div>mensagem de erro</div>
+            </div>
+            <button>Cadastrar</button>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="scripts/login-cadastro.js"></script>
+
+</html>

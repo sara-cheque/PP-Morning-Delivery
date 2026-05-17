@@ -1,0 +1,38 @@
+:root {
+    --color-creme1: #fff9f9;
+    --color-creme2: #f6f0e6;
+    --color-green1: #606b5c;
+    --color-green2: #a8baa1;
+    --color-green3: #e8f9e1;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    background-color: var(--color-green1);
+    position: sticky;
+    top: 0;
+}
+
+.nav-links li, a{
+    text-decoration: none;
+    color: var(--color-creme1);
+    transition: 0.7s;
+
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a:hover{
+    color: var(--color-green2);
+    transition: .3s;
+}
