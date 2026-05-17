@@ -28,7 +28,22 @@
                 </ul>
             </div>
         </div>
-        <div class="container-clock">clock</div>
+
+        <div class="container-clock">
+            <div>
+                <span id="horas">00</span>
+                <span class="tempo">Horas</span>
+            </div>
+            <div>
+                <span id="minutos">00</span>
+                <span class="tempo">Minutos</span>
+            </div>
+            <div>
+                <span id="segundos">00</span>
+                <span class="tempo">Segundos</span>
+            </div> 
+        </div>
+        
     </div>
     <!-- HEADER + O RELOGIO -->
 
@@ -55,47 +70,60 @@
 
             <div class="registoHumor">
                 <p>Hoje o dia foi...</p>
-                <button onclick="cadastrarHumorDia(0)">Feliz</button>
-                <button onclick="cadastrarHumorDia(1)">Estresssante</button>
-                <button onclick="cadastrarHumorDia(2)">Cansativo</button>
-                <button onclick="cadastrarHumorDia(3)">Tenso</button>
-                <button onclick="cadastrarHumorDia(4)">Tediante</button>
-                <button onclick="cadastrarHumorDia(5)">Triste</button>
+                <ul id="lista-humor">
+                    <li><button onclick="cadastrarHumorDia(0)"></button>Feliz</li>
+                    <li><button onclick="cadastrarHumorDia(1)"></button>Estresssante</li>
+                    <li><button onclick="cadastrarHumorDia(2)"></button>Cansativo</li>
+                    <li><button onclick="cadastrarHumorDia(3)"></button>Tenso</li>
+                    <li><button onclick="cadastrarHumorDia(4)"></button>Tediante</li>
+                    <li><button onclick="cadastrarHumorDia(5)"></button>Triste</li>
+                </ul>
+                
+                
+               
+                
+                
             </div>
 
 
         </div>
 
-        <div class="bloqA">
+        <div class="bloqB">
 
-            <p>O que voçê vai fazer...</p>
+            <!-- <p>O que voçê vai fazer...</p> -->
 
             <div class="agendaManha">
-                <div class="BloqCheckBox">
-                    <input type="checkbox" id="checkBoxAgenda">
-                    <p id="nameCheckBoxAgenda"></p>
-                    <!-- BloqCheckBox.innerHTML = `${}` fazer com um contador pra ter diferentes slas -->
-                </div>
-                <input type="text" class="inpNameCheckBoxAgenda">
-                <button>Adicionar</button>
+                <ul id="to-do-list-manha"></ul>
+                <input type="text" id="inpNameToDoManha" placeholder="Nova tarefa">
+                <button onclick="novaTarefaManha()" id="btnToDoManha">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                    </svg>
+                </button>
+
             </div>
-            <div class="agendatarde">
-                <div class="BloqCheckBox">
-                    <input type="checkbox" id="checkBoxAgenda">
-                    <p id="nameCheckBoxAgenda"></p>
-                    <!-- BloqCheckBox.innerHTML = `${}` fazer com um contador pra ter diferentes slas -->
-                </div>
-                <input type="text" class="inpNameCheckBoxAgenda">
-                <button>Adicionar</button>
+            <div class="agendaTarde">
+                <ul id="to-do-list-tarde"></ul>
+                <input type="text" id="inpNameToDoTarde" placeholder="Nova tarefa">
+                <button onclick="novaTarefaTarde()" id="btnToDoTarde">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                    </svg>
+                </button>
             </div>
             <div class="agendaNoite">
-                <div class="BloqCheckBox">
-                    <input type="checkbox" id="checkBoxAgenda">
-                    <p id="nameCheckBoxAgenda"></p>
-                    <!-- BloqCheckBox.innerHTML = `${}` fazer com um contador pra ter diferentes slas -->
-                </div>
-                <input type="text" class="inpNameCheckBoxAgenda">
-                <button>Adicionar</button>
+                <ul id="to-do-list-noite">
+                                        <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                </ul>
+                <input type="text" id="inpNameToDoNoite" placeholder="Nova tarefa">
+                <button onclick="novaTarefaNoite()" id="btnToDoNoite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                    </svg>
+                </button>
             </div>
 
 
@@ -108,7 +136,7 @@
         <div class="bloqA diario">
             <p class="titleDiario">DIARIO</p>
             <p class="subTitle">Cada dia registrado importa</p>
-            <input type="text" id="inpTextBox" class="textBox">
+            <textarea name="" id=""></textarea>
 
         </div>
 
