@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/cadastro.css">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="diario.html">Diario</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
         </ul>
     </div>
 
@@ -23,14 +24,15 @@
 
         </div>
         <div class="blockB">
+            <p class="title">Cadastrar</p>
             <div>
                 <p>Nome</p>
                 <Input id="inpCadNome"></Input>
             </div>
             <div>
                 <p>E-Mail</p>
-                <input type="text" id="inpCadEmail" oninput="cadConfirmaEmail()">
-                <div>mensagem de erro</div>
+                <input type="text" id="inpCadEmail" onchange="cadConfirmaEmail(inpCadEmail.value)">
+                <div id="erroEmail"></div>
             </div>
             <div>
                 <p>Senha</p>
@@ -39,10 +41,10 @@
             </div>
             <div>
                 <p>Confirme sua senha</p>
-                <input type="text" id="inpCadConfSenha" onchange="cadConfirmaSenhaIgual()">
-                <div>mensagem de erro</div>
+                <input type="text" id="inpCadConfSenha" onchange="cadConfirmaSenhaIgual(inpCadConfSenha.value, inpCadSenha.value)">
+                <div id="erroConfirmeSenha"></div>
             </div>
-            <button>Cadastrar</button>
+            <button onclick="cadastrar()">Cadastrar</button>
         </div>
     </div>
 
